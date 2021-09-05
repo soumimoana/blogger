@@ -1,0 +1,157 @@
+
+body {
+  font-family: "Montserrat";
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+p {
+  color: #C8C6C6;
+  font-size: 1.3rem;
+  font-family: 'PT Sans';
+  /* font-weight: 200%; */
+  width: 100%;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+/*Navigation Bar*/
+.logo{
+  cursor: pointer;
+}
+.navbar {
+  padding-bottom: 8rem;
+}
+.nav-item {
+  padding: 0 13px;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;;
+  left: 0;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+}
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding-left: 2%;
+}
+
+/* title*/
+#title{
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(https://www.sterlingcollege.ca/wp-content/uploads/2019/02/kaitlyn-baker-422999-unsplash.jpg);
+  background-size: cover;
+  justify-content: center;
+  padding-bottom: 30%;
+  text-align: center;
+  /* background-position: center;
+  background-repeat: no-repeat;
+  animation: change 10s infinite ease-in-out; */
+}
+button{
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  /* font-weight: bold; */
+  border: 3px solid #009688;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+ span{
+  background: #009688;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+button:hover span{
+  background: #009688;
+  width: 100%;
+}
+button:hover{
+  background: #009688;
+  border: none;
+}
+/* footer*/
+
+.social-icon {
+  padding: 0 10px;
+  color: black;
+}
+
+.p-footer {
+  color: #8f8f8f;
+  padding-top: 1.9%;
+  font-size: 10px;
+}
+
+/* Media Queary*/
+@media(max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .img {
+    position: static;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+/* @keyframes change{
+  0%
+  {
+    background-image: url(https://www.photoblog.com/learn/wp-content/uploads/2019/02/Camera-guidebook-and-laptop-10-travel-writing-tips-to-improve-travel-stories-990x556.jpg);
+  }
+  20%
+  {
+    background-image: url(https://www.vela.insure/fileadmin/_processed_/e/4/csm_person_tiping_on_laptop_7fce671adb.jpg);
+  }
+  40%
+  {
+    background-image: url(https://coolwallpapers.me/picsup/3002797-bed_blogging_browsing_internet_laptop_netbook_notebook_screen_technology_woman_working.jpg);
+  }
+} */
